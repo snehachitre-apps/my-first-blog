@@ -5,6 +5,7 @@
             {% for post in posts %}
                 <article class="post">
                     <time class="date">
+                        {% include './icons/calendar2-check.svg' %}
                         {{ post.published_date }}
                     </time>
                     <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
